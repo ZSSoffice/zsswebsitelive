@@ -9,11 +9,11 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    c1,
-    c2,
-    c3,
-    c4,
-    c6
+    'images/C1.jpg',
+    'images/C2.jpg',
+    'images/C3.jpg',
+    'images/C4.jpg',
+    'images/C6.png'
   ];
 
   useEffect(() => {
