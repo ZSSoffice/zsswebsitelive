@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import BSSModal from './BSSModal';
+import bssImage from '../assets/BSS.png';
+import reImage from '../assets/RE.png';
+import zchImage from '../assets/ZCH1.jpg';
 
 const SisterCompanies = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -7,7 +10,7 @@ const SisterCompanies = () => {
 
   useEffect(() => {
     // Preload images
-    const imageUrls = ['images/BSS.png', 'images/RE.png', 'images/optimized/ZCH.jpg'];
+    const imageUrls = [bssImage, reImage, zchImage];
     Promise.all(
       imageUrls.map((url) => {
         return new Promise((resolve, reject) => {
@@ -44,7 +47,7 @@ const SisterCompanies = () => {
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-600 rounded-xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
                     <div className="relative">
                       <img 
-                        src="images/optimized/ZCH.jpg" 
+                        src={zchImage} 
                         alt="Zon CollabHub Logo" 
                         className="w-full rounded-xl shadow-lg bg-white p-4"
                         style={{ maxHeight: '300px', objectFit: 'contain' }}
@@ -117,7 +120,7 @@ const SisterCompanies = () => {
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-600 rounded-xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
                     <div className="relative">
                       <img 
-                        src="images/BSS.png" 
+                        src={bssImage} 
                         alt="Baba Security Services Logo" 
                         className="w-48 h-48 object-contain mx-auto rounded-xl shadow-lg bg-white p-4"
                       />
@@ -165,7 +168,7 @@ const SisterCompanies = () => {
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-600 rounded-xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
                     <div className="relative">
                       <img 
-                        src="images/RE.png" 
+                        src={reImage} 
                         alt="Ravi Enterprises Logo" 
                         className="w-48 h-48 object-contain mx-auto rounded-xl shadow-lg bg-white p-4"
                       />

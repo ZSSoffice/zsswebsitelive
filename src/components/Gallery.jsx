@@ -1,31 +1,36 @@
 import React, { useState } from 'react';
+import bssImage from '../assets/BSS.png';
+import reImage from '../assets/RE.png';
+import zchImage from '../assets/ZCH.jpg';
+import zssImage from '../assets/ZSS.png';
+import heroImage from '../assets/hero.png';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
     {
-      src: 'images/BSS.png',
+      src: bssImage,
       alt: 'BSS Image',
       title: 'Business Security Services'
     },
     {
-      src: 'images/RE.png',
+      src: reImage,
       alt: 'RE Image',
       title: 'Real Estate'
     },
     {
-      src: 'images/ZCH.jpg',
+      src: zchImage,
       alt: 'ZCH Image',
       title: 'ZCH Services'
     },
     {
-      src: 'images/ZSS.png',
+      src: zssImage,
       alt: 'ZSS Image',
       title: 'Zon Security Services'
     },
     {
-      src: 'images/hero.png',
+      src: heroImage,
       alt: 'Hero Image',
       title: 'Security Services'
     }

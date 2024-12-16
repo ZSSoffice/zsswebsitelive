@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import c1 from '../assets/C1.jpg';
+import c2 from '../assets/C2.jpg';
+import c3 from '../assets/C3.jpg';
+import c4 from '../assets/C4.jpg';
+import c6 from '../assets/C6.png';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    'src/assets/C1.jpg',
-    'src/assets/C2.jpg',
-    'src/assets/C3.jpg',
-    'src/assets/C4.jpg',
-    
-    'src/assets/C6.png'
+    c1,
+    c2,
+    c3,
+    c4,
+    c6
   ];
 
   useEffect(() => {
