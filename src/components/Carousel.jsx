@@ -8,20 +8,14 @@ import c6 from '../assets/C6.png';
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [
-    'images/C1.jpg',
-    'images/C2.jpg',
-    'images/C3.jpg',
-    'images/C4.jpg',
-    'images/C6.png'
-  ];
+  const images = [c1,c2,c3,c4,c6];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => 
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // 2.0 seconds
+    }, 3000); // 3.0 seconds
 
     return () => clearInterval(timer);
   }, []);
