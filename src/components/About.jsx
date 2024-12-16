@@ -2,6 +2,7 @@ import React from 'react';
 import sdImage from '../assets/SD.png';
 import raviImage from '../assets/Ravi.png';
 import manojImage from '../assets/Manojj.jpeg';
+import logo from '../assets/ZSSBG.png';
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <img 
-              src="src/assets/ZSSBG.png" 
+              src={logo}
               alt="ZSS Logo" 
               className="w-full max-w-md mx-auto"
             />
