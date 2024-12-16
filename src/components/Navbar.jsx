@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Z from '../assets/ZSSBG.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             >
-              <img className="h-20 w-auto" src="src/assets/ZSSBG.png" alt="ZSS Logo" />
+              <img className="h-20 w-auto" src={Z} alt="ZSS Logo" />
             </a>
           </div>
 
