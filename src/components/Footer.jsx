@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../assets/ZSSBG.png';
 const Footer = () => {
   const quickLinks = [
     { name: 'About', href: '#about' },
@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="col-span-1 lg:col-span-1">
-            <img src="src/assets/ZSSBG.png" alt="ZSS Logo" className="h-20 w-auto mb-4" />
+            <img src={logo} alt="ZSS Logo" className="h-20 w-auto mb-4" />
             <p className="text-gray-300 mt-4">
               Providing integrated solutions for comprehensive facility management, ensuring safety and efficiency.
             </p>
