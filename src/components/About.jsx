@@ -52,7 +52,7 @@ const About = () => {
                     />
                   </div>
                   <div className="flex-grow text-center md:text-left">
-                    <h4 className="text-2xl font-semibold text-gray-900 mb-2">Mr. S. D. Chaubey</h4>
+                    <h4 className="text-2xl font-semibold text-gray-900 mb-2">Mr. S D Chaubey</h4>
                     <p className="text-primary font-medium mb-4">Founder & Chairman</p>
                     <p className="text-gray-600 leading-relaxed">
                       First generation entrepreneur successfully launched business in the field of Security, Facility Management and Office Support Services. 
